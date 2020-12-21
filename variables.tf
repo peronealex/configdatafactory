@@ -18,3 +18,9 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "connection_string" {
+  default = "Server=tcp:alessiodatalake.database.windows.net,1433;Initial Catalog=alessiodatalake;Persist Security Info=False;User ID=alessiodatalake;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  type = string
+  description = "(optional) describe your variable"
+}
